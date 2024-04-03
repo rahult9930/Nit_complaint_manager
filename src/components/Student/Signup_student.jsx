@@ -38,20 +38,6 @@ const Signup_student = () => {
                 }}>Password</TextField> <br />
                 <br />
                 <Button variant="contained" onClick={ async () => {
-                    // fetch("http://localhost:3000/admin/signup",{
-                    //     method:"POST",
-                    //     body:JSON.stringify({
-                    //         username:email,
-                    //         password
-                    //     }),
-                    //     headers:{"Content-Type":"application/json"}
-                    // }).then((res) => {
-                    //     return res.json();
-                    // }).then((data) => {
-                    //     console.log(data.token);
-                    //     localStorage.setItem("token",data.token);
-                    //     window.location = "/";
-                    // })
                     const res=await axios.post("http://localhost:3000/Student/signup",{
                         username:email,
                         password

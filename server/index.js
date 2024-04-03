@@ -7,7 +7,10 @@ const hodRouter = require("./routes/hod");
 const mongoose = require('mongoose');
 
 const cors=require("cors")
-app.use(cors());
+app.use(cors({
+    credentials:true,
+    origin:"http://localhost:5173"
+}));
 // Middleware for parsing request bodies
 app.use(bodyParser.json());
 app.use("/admin", adminRouter)
