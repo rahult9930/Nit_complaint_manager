@@ -58,7 +58,7 @@ const Student = () => {
             <div >
                
                 <Button variant="contained" onClick={() => {
-                    navigate("/Student/Signup")
+                    navigate("/Student/Signin")
                 }}>Signin</Button>
             </div>
             </Card>

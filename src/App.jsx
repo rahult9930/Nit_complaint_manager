@@ -5,6 +5,7 @@ import Student from './components/Student/Student.jsx';
 import Signup_student from './components/Student/Signup_student.jsx';
 import Addcomplaint from './components/Student/Addcomplaint.jsx';
 import Addsuggestion from './components/Student/Addsuggestion.jsx';
+import Signin_student from './components/Student/Signin_student.jsx';
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
        { <Route path="/Student/Signup" element={<Signup_student />} />}
        { <Route path="/Student/addcomplaint" element={<Addcomplaint />} />}
        { <Route path="/Student/addsuggestion" element={<Addsuggestion />} />}
+       { <Route path="/Student/Signin" element={<Signin_student />} />}
       </Routes>
     </Router>
     
